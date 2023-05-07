@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+	<link rel="stylesheet" href="style.css">
+	<style>
+		form {
+			margin: 20px;
+			padding: 20px;
+			border: 1px solid #ddd;
+			background-color: #f1f1f1;
+			font-size: 1.5em;
+			width: 400px;
+			text-align: center;
+		}
+		input[type="text"], input[type="password"] {
+			padding: 10px;
+			font-size: 1.2em;
+			margin: 10px;
+			border-radius: 5px;
+			border: none;
+			background-color: #f9f9f9;
+			width: 80%;
+			display: inline-block;
+		}
+		input[type="submit"], input[type="reset"], button {
+			padding: 10px;
+			font-size: 1.2em;
+			margin: 10px;
+			border-radius: 5px;
+			border: none;
+			background-color: #4CAF50;
+			color: white;
+			cursor: pointer;
+			transition: background-color 0.3s;
+		}
+		input[type="submit"]:hover, input[type="reset"]:hover, button:hover {
+			background-color: #3e8e41;
+		}
+		input[type="submit"]:active, input[type="reset"]:active, button:active {
+			background-color: #2e6232;
+		}
+		#forgot-password {
+			font-size: 0.8em;
+			color: blue;
+			cursor: pointer;
+			margin-top: 5px;
+			display: block;
+		}
+		#signup {
+			font-size: 1em;
+			color: blue;
+			cursor: pointer;
+			margin-top: 10px;
+			display: block;
+		}
+		#forgot-password:hover, #signup:hover {
+			text-decoration: underline;
+		}
+	</style>
+</head>
+<body>
+	<form action="index.html" method="post">
+		<h2>Login</h2>
+		<input type="text" id="username" name="username" placeholder="Username"><br>
+		<input type="password" id="password" name="password" placeholder="Password"><br>
+		<input type="submit" value="Submit">
+		<input type="reset" value="Clear">
+		<button type="button">Cancel</button>
+		<a href="#" id="forgot-password">Forgot Password?</a>
+		<a href="SignUp.html" id="signup">Sign Up</a>
+	</form>
+</body>
+</html>
